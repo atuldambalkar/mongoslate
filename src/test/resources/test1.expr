@@ -1,0 +1,92 @@
+select distinct tag1, tag2, tag3 from elements where tag1 near location([12,12],3) && tag2 within box([12,12],[3.3,2.3])
+
+select distinct tag1, tag2, tag3 from elements where tag1 within box([12,12],[3.3,2.3])
+
+select distinct tag1, tag2, tag3 from elements where tag1 within circle([12,12],3)
+
+select distinct tag1, tag2, tag3 from elements where tag1 within polygon ([12,12], [10,10])
+
+select distinct tag1, tag2, tag3 from elements where tag1 near location([12,12])
+
+
+select distinct tag1, tag2, tag3 from elements where timestamp('10-2-2012-10-23-34') > tag2 && tag1 near [12,12,3]
+
+select tag1 from elements where tag1 in { 1, 2, 3, 4, 5} order by tag1 asc limit 10
+
+select tag1,tag2, tag3 from elements where tag2 >= (435 * ----12 + (12 ---23)0) && tag1 starts "200" || tag3 starts "200"
+
+select tag1, tag2 from elements where tag1 starts "200" group by tag1, tag2 having tag1 > 100
+
+select tag1, tag2 from elements where tag2 starts "200" group by tag1;
+
+select distinct tag1, tag2 from elements where !!!!!((tag2 >= (435 * ----12 + (12 ---23) * 0) && tag1 starts "200") || (tag3 starts "200")) group by tag1, tag2 having tag1 > 100 order by tag1 asc, tag2 desc limit 10, 5
+
+select distinct tag1, unwind(tag2), sum(tag3), to_upper(tag4) from elements where !!!!!((tag2 >= (435 * ----12 + (12 ---23) * 0) && tag1 starts "200") || (tag3 starts "200")) group by tag1, day_of_year(tag2) order by tag1 asc, tag2 desc limit 10, 5
+
+select tag1, tag2, tag3 from elements where !!!!!((tag2 >= ((435 * ----12 + (12 ---23)) * 0) && tag1 starts "200") || (tag3 starts "200"))
+
+select tag1, tag2, tag3 from elements where !!!!!((tag2 >= (435 * ----12 + (12 ---23)/0) && tag1 starts "200") || (tag3 starts "200"))
+
+select tag1, tag2, tag3 from elements where tag1 >= 100 || !(tag2 < 200 && tag3 == (100*2))
+
+
+
+exists(tag1)
+
+tag1 in { 1, 2, 3, 4, 5}
+
+tag1 >= 100 || (tag2 < 200 && tag3 == 100)
+
+!!!!!((tag2 >= (435 * ----12 + (12 ---23)) && tag1 starts "200") || (tag3 starts "200"))
+
+$element2.tag2 >= (435 * ----12 + (12 ---23)) && $element1.tag1 starts "200" || $element1.tag1 starts "200"
+
+(tag1 >= (435 * ----12 + (12 ---23)) && tag2 starts "200") || tag3 starts "200"
+
+tag1 >= (435 * ----12 + (12 ---23)) && tag2 starts "200"
+
+tag1 >= (435 * ----12 + (12 ---23))
+
+societyName == "ConcordProxima"
+
+$customer.societyName == "ConcordProxima"
+
+$element2.tag2 >= timestamp('12-12-2012-12-23-45-1000')
+
+$element2.tag2 >= timestamp('12-12-2012-12-23-45')
+
+$element2.tag2 >= timestamp('12-12-2012')
+
+45 * 12
+
+$element2.tag2 >= 100
+
+$element2.tag2 >= (435 * ----12 + (12 ---23)) && $element1.tag1 starts "200" || $element1.tag1 starts "200"
+
+
+
+$customer.societyName == "ConcordProxima"
+
+$element1.tag1 starts "200" && $element2.tag2 >= 100 || $element2.tag2 < 200
+
+$element2.tag2 >= 435 * ----12  && !!!!!!($element2.tag2 nin { "1\"3", "2", "3", "4"})
+
+!!!!($element2.tag2 in { "1\"3", "2", "3", "4"})
+
+(($element1.tag1 starts "200") && (($element2.tag2 >= -100) || !($element2.tag2 in { "1\"3", "2", "3", "4"} )))
+
+$element1.tag1 starts "200" && ($element2.tag2 >= 100 || $element2.tag2 < 200)
+
+$element1.tag1 starts "200" && $element2.tag2 >= 100 || $element2.tag2 < 200
+
+$element1.tag1 starts "200"
+
+!($element2.tag2 nin { "1\"3", "2", "3", "4"})
+
+
+
+
+
+
+
+
