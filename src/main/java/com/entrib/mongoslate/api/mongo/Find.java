@@ -100,10 +100,10 @@ public class Find {
     @Override
     public String toString() {
         return "Collection: " + collection
-                + " Keys: " + keys
-                + " Query: " + query
-                + " Sort: " + sort
-                + " Skip: " + skip
-                + " Limit: " + limit;
+                + "\nKeys: " + keys
+                + "\nQuery: " + query
+                + "\nSort: " + sort
+                + "\nSkip: " + skip
+                + "\nLimit: " + limit;
     }
 }

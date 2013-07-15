@@ -28,36 +28,42 @@ public class TranslatorTest extends TestCase {
     public void testDistinct() {
         String test = "select distinct tag1, tag2, tag3 from elements where timestamp('10-2-2012-10-23-34') > tag2";
         Find find = translator.translate(test);
+        System.out.println(find.toString());
         assertNotNull(find);
     }
 
     public void testSelectInSortAscLimit() {
         String test = "select tag1 from elements where tag1 in { 1, 2, 3, 4, 5} order by tag1 asc limit 10";
         Find find = translator.translate(test);
+        System.out.println(find.toString());
         assertNotNull(find);        
     }
 
     public void testSelectLtGtSortDescLimit() {
         String test = "select tag1 from elements where tag1 > 100 && tag1 < 200 order by tag1 asc limit 10";
         Find find = translator.translate(test);
+        System.out.println(find.toString());
         assertNotNull(find);
     }
 
     public void testSelectLtGtSortDescSkipLimit() {
         String test = "select tag1 from elements where tag1 > 100 && tag1 < 200 order by tag1 asc limit 5, 10";
         Find find = translator.translate(test);
+        System.out.println(find.toString());
         assertNotNull(find);
     }
 
     public void testSelectAndLtGtArithExprSortDescSkipLimit() {
         String test = "select tag1 from elements where tag1 > 100 + 200 && tag1 < 200 order by tag1 asc limit 5, 10";
         Find find = translator.translate(test);
+        System.out.println(find.toString());
         assertNotNull(find);
     }
 
     public void testSelectAndOrLtGtArithExprSortDescSkipLimit() {
         String test = "select tag1 from elements where tag1 > 100 + -200 && tag1 < 200 || tag3 starts \"blah\" order by tag1 asc limit 5, 10";
         Find find = translator.translate(test);
+        System.out.println(find.toString());
         assertNotNull(find);
     }
 }
