@@ -1,5 +1,6 @@
 # mongoslate
-Mongoslate is a tool or API to translate SQL-like syntactic query language to MongoDB Query Language. It supports a SQL like syntactic LL(*) grammar. 
+Mongoslate is a tool or API to translate SQL-like syntactic query language to MongoDB Query Language. It supports a SQL like syntactic [LL(*) grammar](https://github.com/atuldambalkar/mongoslate/tree/master/src/main/antlr3/com/entrib/mongoslate).
+
 It uses ANTLR to parse the SQL-like queries and translate those to MongoDB Queries.
 
 ##Aggregation functions support
